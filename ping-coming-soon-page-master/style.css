@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Blue: hsl(223, 87%, 63%);
+
+  --PaleBlue: hsl(223, 100%, 88%);
+  --LightRed: hsl(354, 100%, 66%);
+
+  --Gray: hsl(0, 0%, 59%);
+  --Very-Dark-Blue: hsl(209, 33%, 12%);
+}
+
+body {
+  max-width: 1440px;
+  font-size: 20px;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+.container h1 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-top: 4rem;
+}
+.container .dot {
+  color: var(--Blue);
+}
+
+.container img {
+  width: 660px;
+}
+
+.container h2 {
+  color: var(--Gray);
+  font-weight: 300;
+  margin: 0;
+  margin-top: 2rem;
+}
+
+.container h2 span {
+  font-weight: 700;
+  color: var(--Very-Dark-Blue);
+}
+
+.container p {
+  color: var(--Gray);
+  font-size: 0.8rem;
+  font-weight: 300;
+  margin: 0.5rem 0;
+}
+
+.container #email {
+  padding: 10px 20px;
+  border-radius: 15px;
+  outline: none;
+  border: 0.3px solid var(--Gray);
+  margin: 1rem 0;
+}
+
+.error {
+  border: 0.3px solid var(--LightRed);
+}
+
+.small {
+  text-align: center;
+  font-size: 10px;
+  color: var(--LightRed);
+}
+.container #email::placeholder {
+  font-size: 0.6rem;
+  color: var(--Gray);
+}
+
+.container .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 15px;
+  outline: none;
+  border: none;
+  background: var(--Blue);
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.container .btn:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  box-shadow: 3px 3px 4px var(--Blue);
+}
+.container .social {
+  margin: 1rem;
+  color: var(--Blue);
+}
+
+.container i {
+  border: 0.4px solid var(--Gray);
+  border-radius: 50%;
+  padding: 1rem;
+  font-size: 1rem;
+  transition: all 0.7s ease;
+}
+
+.container i:hover {
+  color: #fff;
+  background: var(--Blue);
+}
+
+.footer {
+  font-weight: 300;
+  font-size: 0.7rem;
+}
+
+@media screen and (max-width: 776px) {
+  body {
+  }
+
+  .container img {
+    width: 380px;
+    margin: 0 auto;
+  }
+}

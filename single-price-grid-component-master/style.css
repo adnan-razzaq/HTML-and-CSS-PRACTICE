@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --Cyan: hsl(179, 62%, 43%);
+  --BrightYellow: hsl(71, 73%, 54%);
+  --LightGray: hsl(204, 43%, 93%);
+  --GrayishBlue: hsl(218, 22%, 67%);
+}
+
+body {
+  max-width: 1440px;
+  font-size: 16px;
+  font-family: "Karla", sans-serif;
+  background-color: var(--LightGray);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  background-color: #fff;
+  max-width: 800px;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px 10px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  padding: 30px;
+}
+
+section {
+  padding: 30px;
+  color: #fff;
+  width: 100%;
+}
+
+section.lsection {
+  background-color: var(--GrayishBlue);
+}
+section.fsection {
+  background-color: var(--Cyan);
+}
+
+h1 {
+  color: var(--Cyan);
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.yellow-text {
+  color: var(--BrightYellow);
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.row {
+  display: flex;
+}
+
+section .row {
+  flex: 1;
+}
+
+button {
+  background-color: var(--BrightYellow);
+  padding: 20px;
+  width: 100%;
+  border: none;
+  color: #fff;
+}
+
+.row .fsection .faded {
+  font-size: 1.3rem;
+}
+span {
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+ul li {
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 776px) {
+  .row {
+    flex-direction: column;
+  }
+}
