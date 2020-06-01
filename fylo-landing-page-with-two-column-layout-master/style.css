@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap");
+:root {
+  --Very-Dark-Blue: hsl(243, 87%, 12%);
+  --Desaturated-Blue: hsl(238, 22%, 44%);
+  --Bright-Blue: hsl(224, 93%, 58%);
+  --Moderate-Cyan: hsl(170, 45%, 43%);
+  --Light-Grayish-Blue: hsl(240, 75%, 98%);
+  --Light-Gray: hsl(0, 0%, 75%);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Raleway", sans-serif;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+}
+
+.container {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+img {
+  max-width: 100%;
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.flex > div {
+  flex: 1;
+}
+
+.flex > div:first-child {
+  margin-right: 100px;
+}
+
+/* Nav styling */
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+ul li {
+  margin-left: 20px;
+}
+
+ul a {
+  text-decoration: none;
+}
+
+/* Form section */
+
+form {
+  margin-top: 20px;
+  display: flex;
+}
+
+input {
+  border: 1px solid var(--Very-Dark-Blue);
+  border-radius: 2px;
+  padding: 15px;
+  flex: 0.7;
+
+  margin-right: 10px;
+}
+button {
+  flex: 0.3;
+  padding: 15px;
+  background-color: var(--Bright-Blue);
+  border-radius: 2px;
+  border: none;
+  color: var(--Light-Grayish-Blue);
+}
+
+/* curve section */
+
+.curve-section {
+  margin: 40px 0;
+  background: url("./images/bg-curve-desktop.svg") no-repeat center center/cover;
+}
+.curve-section a {
+  color: var(--Moderate-Cyan);
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
+.testimonial-box {
+  background-color: #fff;
+  padding: 25px;
+  margin-top: 20px;
+  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.15);
+  width: 400px;
+}
+
+.testimonial-box p {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.066em;
+}
+
+.user-info {
+  display: flex;
+  margin-top: 20px;
+}
+
+.user-info img {
+  border-radius: 50%;
+  width: 50px;
+  margin: 0 10px;
+}
+small {
+  font-size: 0.6rem;
+}
+
+/* blusish section */
+
+.bluish {
+  background-color: var(--Desaturated-Blue);
+  padding: 20px 0;
+  color: var(--Light-Grayish-Blue);
+}
+
+/* section footer */
+
+footer {
+  background-color: var(--Very-Dark-Blue);
+  color: var(--Light-Grayish-Blue);
+}
+
+footer li {
+  list-style: none;
+
+  margin-bottom: 10px;
+}
+
+footer li a {
+  color: var(--Light-Grayish-Blue);
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social a {
+  color: var(--Light-Grayish-Blue);
+  border: 1px solid #fff;
+  border-radius: 50%;
+  padding: 5px;
+  margin: 10px;
+}
+
+/* responsiveness */
+@media screen and (max-width: 768px) {
+  body {
+    text-align: center;
+  }
+
+  nav {
+    flex-direction: column;
+    margin: 10px 0;
+  }
+
+  nav ul li {
+    margin: 10px 20px;
+  }
+
+  .light-blueish::before {
+    background-image: url("./images/bg-curve-mobile.svg");
+    height: 80px;
+  }
+
+  .flex {
+    flex-direction: column;
+  }
+
+  .flex > div {
+    width: 100%;
+  }
+
+  .flex > div:first-child {
+    margin-right: 0;
+  }
+
+  .flex > div:last-child {
+    margin-left: 0;
+  }
+
+  .testimonial-box {
+    width: 100%;
+  }
+
+  .blueish form input {
+    flex: 1;
+  }
+
+  .blueish form button {
+    margin: 20px 0;
+    width: 100%;
+  }
+
+  .illustration {
+    margin-top: 30px;
+  }
+
+  .user-info {
+    justify-content: center;
+  }
+
+  footer ul {
+    padding: 0;
+    width: 100%;
+  }
+}
