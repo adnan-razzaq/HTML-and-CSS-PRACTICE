@@ -1,2 +1,2 @@
-# FrontendMentor-Challeneges
+# HTMLANDCSS PROJECTS
 Practicing HTML and CSS
