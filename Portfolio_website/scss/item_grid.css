@@ -1,0 +1,31 @@
+.items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -webkit-box-shadow: 0 5px 10px 0 black;
+          box-shadow: 0 5px 10px 0 black;
+  gap: 5rem;
+  padding: 2rem 0;
+}
+
+.item {
+  position: relative;
+  background: #83e008e5;
+  overflow: hidden;
+}
+
+.item:hover {
+  -webkit-transform: scale(1.2) translateX(0) translateY(0) rotate(2deg);
+          transform: scale(1.2) translateX(0) translateY(0) rotate(2deg);
+}
+
+.item:hover .item-text {
+  opacity: 1;
+  color: white;
+}
+
+.item-text {
+  opacity: 0.6;
+}
+/*# sourceMappingURL=item_grid.css.map */

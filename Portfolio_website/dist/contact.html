@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>Contact Me</title>
+ <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet" />
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+ <link rel="stylesheet" href="../scss/main.css" />
+</head>
+
+<body>
+ <!-- Header -->
+ <header id="header-inner">
+  <div class="container">
+   <nav id="main-nav">
+    <img src="img/logo.png" alt="image" id="logo" />
+    <ul>
+     <li><a href="index.html">Home</a></li>
+     <li><a href="about.html">About</a></li>
+     <li><a href="work.html">Work</a></li>
+     <li><a href="contact.html" class="current">Contact</a></li>
+    </ul>
+   </nav>
+  </div>
+ </header>
+
+ <!-- Footer -->
+ <div id="main-footer">
+  <div class="footer-content container ">
+   <p>Copyright &copy; 2019. All Rights Reserved</p>
+   <div class="social">
+    <i class="fa fa-facebook-f"></i>
+    <i class="fa fa-twitter"></i>
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-youtube"></i>
+   </div>
+  </div>
+ </div>
+
+ <!-- Section-a: Form -->
+ <section id="contact-a" class="text-center py-3">
+  <div class="container">
+   <h2 class="section-title">Contact Me</h2>
+   <div class="bottom-line"></div>
+   <p class="leed">Here is how you can reach me</p>
+   <form method="POST" data-netlify="true" data-netlify-recaptcha="true">
+    <div class="text-fields">
+     <input type="text" class="text-input name-input" placeholder="Name" name="name" />
+     <input type="text" class="text-input subject-input" placeholder="Subject" name="subject" />
+     <input type="email" class="text-input email-input" placeholder="Email" name="email" />
+     <input type="number" class="text-input phone-input" placeholder="Phone Number" name="phone" />
+     <textarea class="text-input message-input" cols="30" rows="10" placeholder="Enter your message"
+      name="message"></textarea>
+     <div class="my-2"></div>
+     <div data-netlify-recaptcha="true"></div>
+    </div>
+    <input type="submit" value="Submit" class="btn-dark">
+   </form>
+  </div>
+ </section>
+
+ <!-- Section-B -->
+ <section id="contact-b" class="py-3 bg-dark">
+  <div class="contaier">
+   <div class="contact-info">
+    <div>
+     <i class="fa fa-envelope-open fa-2x"></i>
+     <h3>Email</h3>
+     <p>adnan@gmail.com</p>
+    </div>
+    <div>
+     <i class="fa fa-mobile-phone fa-2x"></i>
+     <h3>Phone</h3>
+     <p>090078601</p>
+    </div>
+    <div>
+     <i class="fa fa-address-card fa-2x te"></i>
+     <h3>Address</h3>
+     <p>Bamberg,Germany</p>
+    </div>
+   </div>
+  </div>
+ </section>
+ <!-- Section-c -->
+ <section id="contact-c" class="bg-main py-3 text-center">
+  <div class="container">
+   <h1 class="section-title">lets start your next project</h1>
+  </div>
+
+ </section>
+ <script src="https://kit.fontawesome.com/c2cdb1b1f1.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

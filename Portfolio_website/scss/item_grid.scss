@@ -1,0 +1,26 @@
+@import "config";
+.items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 1);
+  gap: 5rem;
+  padding: 2rem 0;
+}
+
+.item {
+  position: relative;
+  background: $main-color;
+  overflow: hidden;
+
+  &:hover {
+    transform: scale(1.2) translateX(0) translateY(0) rotate(2deg);
+  }
+
+  &:hover &-text {
+    opacity: 1;
+    color: white;
+  }
+  &-text {
+    opacity: 0.6;
+  }
+}

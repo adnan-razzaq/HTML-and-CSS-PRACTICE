@@ -1,0 +1,41 @@
+body {
+  background: lightpink;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container img {
+  width: 200px;
+  animation: heart 1s infinite 0.3s;
+}
+.container h1 {
+  font-size: 3rem;
+  font-family: fantasy;
+  animation: word 1s 0.3s;
+}
+
+@keyframes heart {
+  0% {
+  }
+  25% {
+    transform: scale(2);
+  }
+}
+
+@keyframes word {
+  0% {
+    color: red;
+  }
+  25% {
+    transform: translateY(20px);
+  }
+  50% {
+    transform: scale(2);
+  }
+}

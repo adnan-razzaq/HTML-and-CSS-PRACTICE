@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress {
+  background-color: #f45632;
+  width: 15vw;
+  height: 4vh;
+  border-radius: 20px;
+  color: aliceblue;
+}
+
+.progress-done {
+  background: linear-gradient(to left, #f2709c, #ff9472);
+  width: 0vw;
+  height: 4vh;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 3px 3px -5px #f2709c, 0 2px 5px #ff9472;
+  opacity: 0;
+  transition: 1s ease;
+}

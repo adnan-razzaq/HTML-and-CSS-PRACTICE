@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.circle {
+  width: 8px;
+  height: 8px;
+  background-color: blue;
+  margin: 0.3rem;
+  border-radius: 50%;
+  animation: jump 0.5s ease infinite;
+}
+
+.b5 {
+  animation-delay: 0.5s;
+}
+.b4 {
+  animation-delay: 0.4s;
+}
+.b3 {
+  animation-delay: 0.3s;
+}
+
+.b2 {
+  animation-delay: 0.2s;
+}
+.b1 {
+  animation-delay: 0.1s;
+}
+@keyframes jump {
+  0% {
+    transform: translatey(0);
+  }
+  25% {
+    transform: translatey(-20px);
+  }
+  50% {
+    transform: translateX(-2px);
+
+    background-color: crimson;
+  }
+  75% {
+    transform: scale(2);
+  }
+}

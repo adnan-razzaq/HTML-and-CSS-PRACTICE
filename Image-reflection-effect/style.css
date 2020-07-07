@@ -1,0 +1,20 @@
+.img1 {
+  background: url("beautiful-blur-close-up-cute-267112.jpg") no-repeat center
+    center/cover;
+  width: 40vw;
+  height: 60vh;
+  margin: 50px auto;
+  position: relative;
+}
+
+.img1::after {
+  content: "";
+  background: inherit;
+  width: 40vw;
+  height: 60vh;
+  margin: 50px auto;
+  position: absolute;
+  bottom: -101%;
+  transform: rotate(180deg);
+  opacity: 0.2;
+}
