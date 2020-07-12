@@ -1,5 +1,8 @@
 # Frontend Mentor - Base Apparel coming soon page
 
+[CLICK HERE TO SEE THE DEMO](https://base-apparel-coming-soon-p.netlify.app/)
+
+
 ![Design preview for the Base Apparel coming soon page coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
