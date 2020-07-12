@@ -1,5 +1,6 @@
 # Frontend Mentor - Huddle landing page with single introductory section
 
+[CLICK HERE TO SEE THE DEMO](https://huddle-single-section.netlify.app/)
 ![Design preview for the Huddle landing page with single introductory section](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
