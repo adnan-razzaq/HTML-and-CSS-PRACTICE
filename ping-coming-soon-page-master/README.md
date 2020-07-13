@@ -1,5 +1,8 @@
 # Frontend Mentor - Ping coming soon page
 
+[CLICK HERE TO SEE THE DEMO](https://launchingpage.netlify.app/)
+
+
 ![Design preview for the Ping coming soon page coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
