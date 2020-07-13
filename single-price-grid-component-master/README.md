@@ -1,5 +1,8 @@
 # Frontend Mentor - Single Price Grid Component
 
+[CLICK HERE TO SEE THE DEMO](https://subsciption-page.netlify.app/)
+
+
 ![Design preview for the Single Price Grid Component coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
